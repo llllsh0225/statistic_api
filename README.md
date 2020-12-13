@@ -12,6 +12,7 @@
     - port 번호 추가 / ContextPath / view.prefix / view.suffix / DataSource 설정
   + 테스트를 위한 폴더, 파일 생성
   + 테스트 컨트롤러 작성 후 브라우저에서 확인
+  
   ![result01](https://user-images.githubusercontent.com/59604987/102009013-fb36b080-3d77-11eb-8b7a-ed1198bf2022.PNG)
 
 2. 통계 API를 위한 DB, Table 생성 (완료)
@@ -28,6 +29,7 @@
   + statistic-mapping.xml
     + "sqlyearStatistic" : year(String) 파라미터를 받아 로그인 횟수를 integer로 리턴
 * 서버구동 후 결과 확인
+
 ![result02](https://user-images.githubusercontent.com/59604987/102009599-cd536b00-3d7b-11eb-9b0a-41ee99c32b68.PNG)
 
 4. Rest API란?
