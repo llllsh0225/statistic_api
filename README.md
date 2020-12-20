@@ -90,4 +90,13 @@
   ![06](https://user-images.githubusercontent.com/59604987/102712590-b249a380-4305-11eb-9ca0-ac11bf23d7c1.PNG)
   
 
+3. 부서별 월별 로그인 수
 
+  * 쿼리문
+  
+  ![07](https://user-images.githubusercontent.com/59604987/102712628-005ea700-4306-11eb-8c6f-497165d99c04.PNG)
+  
+  * 결과 확인
+  
+  ![08](https://user-images.githubusercontent.com/59604987/102712630-00f73d80-4306-11eb-8cea-a367f37561c3.PNG)
+  
