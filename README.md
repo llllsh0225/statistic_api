@@ -83,5 +83,11 @@
 
   * 쿼리문
   
+  ![05](https://user-images.githubusercontent.com/59604987/102712589-b1187680-4305-11eb-9e43-0708e56ca374.PNG)
   
+  * 결과 확인
+  
+  ![06](https://user-images.githubusercontent.com/59604987/102712590-b249a380-4305-11eb-9ca0-ac11bf23d7c1.PNG)
+  
+
 
