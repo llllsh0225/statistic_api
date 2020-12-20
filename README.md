@@ -60,4 +60,11 @@
 ### 4주차 REST API 구현(2)
 
 1. 연/월/일자별 접속자 수 (@PathVariable 활용)
+
   * 쿼리문
+  
+  ![01](https://user-images.githubusercontent.com/59604987/102712470-e96b8500-4304-11eb-9ca5-2fef5543cf9e.PNG)
+  
+  * 결과 확인
+  
+  
