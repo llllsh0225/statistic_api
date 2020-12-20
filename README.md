@@ -67,4 +67,21 @@
   
   * 결과 확인
   
+    * 연도별 조회
+    
+    ![02](https://user-images.githubusercontent.com/59604987/102712513-3d766980-4305-11eb-9c57-87e9aa29830f.PNG)
+    
+    * 월별 조회
   
+    ![03](https://user-images.githubusercontent.com/59604987/102712515-3e0f0000-4305-11eb-8749-e1178ed361b5.PNG)
+    
+    * 일자별 조회
+    
+    ![04](https://user-images.githubusercontent.com/59604987/102712516-3ea79680-4305-11eb-87f8-62dcaea23883.PNG)
+  
+2. 평균 하루 로그인 수
+
+  * 쿼리문
+  
+  
+
