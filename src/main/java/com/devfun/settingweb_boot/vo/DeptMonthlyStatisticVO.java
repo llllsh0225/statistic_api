@@ -1,8 +1,9 @@
 package com.devfun.settingweb_boot.vo;
 
-public class YearStatisticVO {
+public class DeptMonthlyStatisticVO {
 	private int totCnt;
-	private String year;
+	private String hr_organ;
+	private String yearMonth;
 	private boolean is_success;
 	public int getTotCnt() {
 		return totCnt;
@@ -10,11 +11,17 @@ public class YearStatisticVO {
 	public void setTotCnt(int totCnt) {
 		this.totCnt = totCnt;
 	}
-	public String getYear() {
-		return year;
+	public String getHr_organ() {
+		return hr_organ;
 	}
-	public void setYear(String year) {
-		this.year = year;
+	public void setHr_organ(String hr_organ) {
+		this.hr_organ = hr_organ;
+	}
+	public String getYearMonth() {
+		return yearMonth;
+	}
+	public void setYearMonth(String yearMonth) {
+		this.yearMonth = yearMonth;
 	}
 	public boolean isIs_success() {
 		return is_success;
@@ -23,3 +30,4 @@ public class YearStatisticVO {
 		this.is_success = is_success;
 	}
 }
+

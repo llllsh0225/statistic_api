@@ -9,5 +9,36 @@
 			AND
 				createDate LIKE #{year} || '%'
 	</select>
+	
+	<!-- 연/월/일자별 접속자수 조회 -->
+	<select id="getStatisticFromCreateDate" parameterType="String" resultType = "integer">
+		SELECT COUNT(*)
+		FROM requestInfo
+		WHERE 
+				requestCode = 'L'
+			AND 
+				createDate LIKE #{createDate} || '%'
+	</select>
 
+	<!-- 평균 하루 접속자수 조회 -->
+	<select id="getAverageLogin" resultType = "integer">
+		SELECT AVG(CNT)
+		FROM (
+			SELECT COUNT(requestID) AS CNT
+			FROM requestInfo
+			WHERE requestCode = 'L'
+			GROUP BY SUBSTR(createDate, 1, 6)
+		)
+	</select>
+	
+	<!-- 부서별 월별 로그인수 조회 -->
+	<select id="getDeptMonthlyLogin" parameterType="hashMap" resultType="integer">
+		SELECT COUNT(*)
+		FROM requestInfo rif
+			INNER JOIN users usr
+			ON rif.userID = usr.userID
+		WHERE rif.requestCode = 'L'
+			AND usr.hr_organ = #{hr_organ}
+			AND rif.createDate LIKE #{yearMonth} || '%'
+	</select>
 </mapper>

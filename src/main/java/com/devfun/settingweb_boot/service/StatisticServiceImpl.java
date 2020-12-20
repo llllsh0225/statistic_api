@@ -1,10 +1,11 @@
 package com.devfun.settingweb_boot.service;
 
+import java.util.HashMap;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.devfun.settingweb_boot.dao.StatisticDAO;
-import com.devfun.settingweb_boot.vo.YearStatisticVO;
 
 @Service
 public class StatisticServiceImpl implements StatisticService {
@@ -15,6 +16,21 @@ public class StatisticServiceImpl implements StatisticService {
 	@Override
 	public int sqlyearStatistic(String year) {
 		return statisticDao.sqlyearStatistic(year);
+	}
+
+	@Override
+	public int getStatisticFromCreateDate(String createDate) {
+		return statisticDao.getStatisticFromCreateDate(createDate);
+	}
+
+	@Override
+	public int getAverageLogin() {
+		return statisticDao.getAverageLogin();
+	}
+
+	@Override
+	public int getDeptMonthlyLogin(HashMap<String, String> param) {
+		return statisticDao.getDeptMonthlyLogin(param);
 	}
 
 }

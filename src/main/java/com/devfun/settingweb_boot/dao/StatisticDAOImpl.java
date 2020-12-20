@@ -1,10 +1,10 @@
 package com.devfun.settingweb_boot.dao;
 
+import java.util.HashMap;
+
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-
-import com.devfun.settingweb_boot.vo.YearStatisticVO;
 
 @Repository
 public class StatisticDAOImpl implements StatisticDAO {
@@ -18,6 +18,25 @@ public class StatisticDAOImpl implements StatisticDAO {
 		int totCnt = sqlSession.selectOne("com.devfun.settingweb_boot.dao.StatisticDAO.sqlyearStatistic", year);
 		
 		System.out.println(totCnt);
+		return totCnt;
+	}
+
+	@Override
+	public int getStatisticFromCreateDate(String createDate) {
+		int totCnt = sqlSession.selectOne("com.devfun.settingweb_boot.dao.StatisticDAO.getStatisticFromCreateDate", createDate);
+		
+		return totCnt;
+	}
+
+	@Override
+	public int getAverageLogin() {
+		int totCnt = sqlSession.selectOne("com.devfun.settingweb_boot.dao.StatisticDAO.getAverageLogin");
+		return totCnt;
+	}
+
+	@Override
+	public int getDeptMonthlyLogin(HashMap<String, String> param) {
+		int totCnt = sqlSession.selectOne("com.devfun.settingweb_boot.dao.StatisticDAO.getDeptMonthlyLogin", param);
 		return totCnt;
 	}
 
